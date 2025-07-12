@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Result.unity
     guid: 8db621863bbf923429920ee5485e2e90
+  - enabled: 1
+    path: Assets/Scenes/prologue.unity
+    guid: 4acc382672d5df840addcb45707eb698
   m_configObjects: {}
