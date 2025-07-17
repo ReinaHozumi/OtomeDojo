@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 196226864}
   - component: {fileID: 196226866}
   - component: {fileID: 196226865}
+  - component: {fileID: 196226867}
   m_Layer: 5
   m_Name: titleLogo_image
   m_TagString: Untagged
@@ -197,6 +198,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196226863}
   m_CullTransparentMesh: 1
+--- !u!95 &196226867
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196226863}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fd1b58230cf8ef44783f9e41781cda03, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &361282266
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +739,7 @@ GameObject:
   - component: {fileID: 1017968321}
   - component: {fileID: 1017968323}
   m_Layer: 5
-  m_Name: girl_image
+  m_Name: illust(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -827,11 +849,11 @@ Transform:
   m_GameObject: {fileID: 1073146558}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -71.31848, y: -9.032471, z: -0.77630234}
+  m_LocalPosition: {x: 945.3263, y: 531.5964, z: 4.0642953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2136283023}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1073146560
 AudioSource:
@@ -1018,8 +1040,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1632698955}
   - component: {fileID: 1632698956}
-  - component: {fileID: 1632698958}
-  - component: {fileID: 1632698957}
   m_Layer: 0
   m_Name: SE
   m_TagString: Untagged
@@ -1138,30 +1158,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1632698957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632698954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 438d277c6173a6049ad84e9bb4fa9b20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1632698958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632698954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d24d617b10599284c89d923a519d66d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1779812829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,6 +1211,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2136283023}
+  - component: {fileID: 2136283025}
+  - component: {fileID: 2136283024}
   m_Layer: 0
   m_Name: AudioMusic
   m_TagString: Untagged
@@ -1235,10 +1233,33 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1073146559}
   - {fileID: 1632698955}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2136283024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136283021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438d277c6173a6049ad84e9bb4fa9b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2136283025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136283021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24d617b10599284c89d923a519d66d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1247,4 +1268,5 @@ SceneRoots:
   - {fileID: 585828509}
   - {fileID: 480427791}
   - {fileID: 1779812831}
+  - {fileID: 1073146559}
   - {fileID: 2136283023}
